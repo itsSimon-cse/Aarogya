@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <!-- Head Content Placeholder for specific page data -->
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <!-- CSS Styles -->
+    <style type="text/css">
+        .style2 {
+            height: 123px;
+        }
+        .style4 {
+            height: 6px;
+        }
+        .style7 {
+            width: 252px;
+            height: 61px;
+        }
+        .style8 {
+            width: 5416px;
+            height: 61px;
+        }
+        .style12 {
+            height: 143px;
+        }
+        .style14 {
+            height: 6px;
+            color: #FFFFFF;
+        }
+        .style16 {
+            width: 196px;
+            height: 23px;
+        }
+        .style17 {
+            width: 150px;
+            height: 230px;
+        }
+        .style18 {
+            width: 940px;
+            height: 230px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table>
+                <!-- Table Row 1 -->
+                <tr>
+                    <td class="style2" colspan="3" align="center" valign="top">
+                        <img alt="Image 1" class="style17" src="../Images/India.jpg" />
+                        <img alt="Image 2" class="style18" src="../Images/3.jpg" />
+                    </td>
+                </tr>
+                <!-- Horizontal Rule -->
+                <hr />
+                <!-- Table Row 2 -->
+                <tr>
+                    <td align="center" bgcolor="#0066FF" class="style14" colspan="3"
+                        style="border: medium ridge #00FF00; caption-side: top; text-align: left;">
+                        <marquee style="width: 1088px">Arogyave Bhagya--Health Is Wealth</marquee>&nbsp;
+                    </td>
+                </tr>
+                <!-- Table Row 3 -->
+                <tr>
+                    <td align="center" bgcolor="#0066FF" class="style14" colspan="3"
+                        style="border-width: medium; border-color: #996633; caption-side: top; text-align: left; border-bottom-style: ridge; background-color: #FF9933;">
+                        <asp:Label ID="LblWelcome" runat="server"></asp:Label>
+                        <asp:HyperLink ID="Log" runat="server">Login</asp:HyperLink>
+                    </td>
+                </tr>
+                <!-- Table Row 4 -->
+                <tr>
+                    <td class="style12" colspan="3" valign="top" style="border-color: #C0C0C0; border-style: inset;">
+                        <marquee behavior="scroll" onmouseover="this.stop();" onmouseout="this.start();">
+                            <img alt="Image 3" class="style19" src="../Images/criminal-law13_0.jpg" />
+                            <img alt="Image 4" class="style19" src="../Images/rsby13.jpg" />
+                            <img alt="Image 5" class="style 19" src="./Images/polio13.jpg" />
+                            <img alt="Image 6" class="style19" src="./Images/IWW1_0.jpg" />
+                            <img alt="Image 7" class="style19" src="./Images/nrhm-janani-sura.jpg" />
+                        </marquee>
+                    </td>
+                </tr>
+                <!-- Table Row 5 (Background Silver) -->
+                <tr bgcolor="Silver">
+                    <td class="style7" valign="top" style="border-color: #COCOCO; border-style: inset;">
+                        <asp:Panel ID="Panel1" runat="server" BackColor="#0066FF" BorderStyle="Outset" Width="247px">Main Menu</asp:Panel>
+                        <asp:Menu ID="MenuAdmin" runat="server" Font-Names="Nyala" Font-Size="Large" ForeColor="#990000">
+                            <Items>
+                                <asp:MenuItem Text="Home" Value="Home" ToolTip="Home"></asp:MenuItem>
+                                <asp:MenuItem Text="About Aaroogya" Value="About Aaroogya" ToolTip="About Aaroogya"></asp:MenuItem>
+                                <asp:MenuItem Text="Arogya Usage" Value="Arogya Usage" ToolTip="Arogya Usage"></asp:MenuItem>
+                                <asp:MenuItem Text="Arogya Enrolment" Value="Arogya Enrolment" ToolTip="Arogya Enrolment">
+                                    <asp:MenuItem Text="General" ToolTip="General Registration" Value="General"></asp:MenuItem>
+                                    <asp:MenuItem Text="Doctor" Value="Doctor"></asp:MenuItem>
+                                    <asp:MenuItem Text="Hospital" Value="Hospital"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Status" Value="Status" ToolTip="Check Ur Arogya Details"></asp:MenuItem>
+                                <asp:MenuItem Text="Search" Value="Search" ToolTip="Search">
+                                    <asp:MenuItem Text="Patient" ToolTip="Search and Edit" Value="Patient"></asp:MenuItem>
+                                    <asp:MenuItem Text="Doctor" ToolTip="Search and Edit" Value="Doctor"></asp:MenuItem>
+                                    <asp:MenuItem Text="Hospital" ToolTip="Search and Edit" Value="Hospital"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Gallery" Value="Gallery">
+                                    <asp:MenuItem Text="Images" Value="Images"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Vacancies In Aaroogya" ToolTip="Search For Job" Value="Vacancies In Aaroogya"></asp:MenuItem>
+                                <asp:MenuItem Text="Contact" Value="Contact"></asp:MenuItem>
+                            </Items>
+                        </asp:Menu>
+                        <br />
+                        <asp:Panel ID="Panel2" runat="server" BackColor="#0066FF" BorderStyle="Outset" Width="247px">Resources</asp:Panel>
+                        <br />
+                        <asp:Menu ID="Menu2" runat="server">
+                            <Items>
+                                <asp:MenuItem Text="Adhaar Technology" Value="Adhaar Technology" NavigateUrl="/AdharTech.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Biometric Devices" Value="Biometric Devices" NavigateUrl="~/Biometric.aspx"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle ForeColor="#FF3300" />
+                        </asp:Menu>
+                    </td>
+                    <td class="style8" valign="top" style="border-color: #COCOCO; border-style: inset;" bgcolor="Silver">
+                        <div>
+                            <!-- Main Content Placeholder for specific page content -->
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                <p><br /></p>
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                    <td class="style16" valign="top" style="border-color: #COCOCO; border-style: inset; font-family: 'Times New Roman', Times, serif; color: #0000FF; font-size: medium;">
+                        <asp:Panel ID="Panel3" runat="server" BackColor="#0066FF" BorderStyle="Outset" Width="190px" ForeColor="Black">Useful Links</asp:Panel>
+                        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="http://uidai.gov.in/">Adhar Enrollment</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="http://www.karnataka.gov.in/Pages/Default.aspx">Govt. Of Karnataka</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="http://www.india.gov.in/">National Portal Of India</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="http://www.manage.gov.in/">Official website of National Institute of Agricultural Extension Management</asp:HyperLink>
+                        <br />
+                        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="http://boi.gov.in/?q=content/online-registration">Online registration for foreigners by Bureau of Immigration</asp:HyperLink>
+                        <br />
+                        <asp:Panel ID="Panel4" runat="server" BackColor="#0066FF" BorderStyle="Outset" Width="190px" ForeColor="Black">Advertisements</asp:Panel>
+                        <br />
+                        <asp:Panel ID="Panel5" runat="server">
+                            <asp:Image ID="Image1" runat="server" Width="195px" Height="196px" ImageUrl="~/Images/admissioncounselor.co.in_small.jpg" />
+                        </asp:Panel>
+                        <br />
+                    </td>
+                </tr>
+                <!-- Table Row 6 -->
+                <tr>
+                    <td align="center" bgcolor="#996633" class="style4" colspan="3">Copyright: @2013 Bangalore University..</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
